@@ -1,47 +1,16 @@
-# ts-tooling [![Lint](https://github.com/asjadanis/ts-tooling/actions/workflows/lint.yml/badge.svg)](https://github.com/asjadanis/ts-tooling/actions/workflows/lint.yml)
+# Hortis Tech Test
 
-A very simple and extendable boilerplate for typescript configured with ESLint, Prettier, Husky, Commitizen.
+## Applicant Information
 
-### Lint
+Name: Curtis Campbell
 
-To modify eslint rules update your `.eslintrc` file in the project root, it currently uses 
-- "eslint:recommended",
-- "plugin:@typescript-eslint/recommended",
+## Installation
 
-To lint the entire project run
+-   Node version 18 is required to run this application
+-   Install dependencies by running `npm i` in the terminal.
 
-```bash
-yarn lint
-```
+## Running the Application
 
-### Prettier
-
-To update prettier rules modify `.prettierrc` file in the root of repo.
-
-To format the entire project run
-
-```bash
-yarn format
-```
-
-### Conventional Commits
-
-[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) are supported using [commitizen](https://github.com/commitizen/cz-cli)
-
-To use commitizen with your commits run
-
-```bash
-yarn cz
-````
-
-### Husky
-
-A `pre-commit` hook is setup using husky and and it will run lint and format command on all staged files that match the target files (src/**/*.ts)
-
-```bash
-#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
-
-npx lint-staged
-```
-
+-   Run the application in development mode by running `npm run dev` in the terminal.
+-   Once the application is running, make a POST request to the endpoint specified in the terminal. By default, the endpoint will be
+    `http://localhost:3000`.
